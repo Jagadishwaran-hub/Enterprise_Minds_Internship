@@ -12,7 +12,7 @@ class LLMService:
 
     def _get_api_key(self) -> str:
         """Return the Groq API key"""
-        return "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"
+        return ""
 
     def initialize(self):
         try:
