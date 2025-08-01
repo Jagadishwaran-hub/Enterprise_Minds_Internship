@@ -30,7 +30,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
 COPY . .
 
 # Create necessary directories
-RUN mkdir -p data database/faiss_index
+RUN mkdir -p data database
 
 # Expose ports for both Streamlit and Flask
 EXPOSE 8501 5000
@@ -40,4 +40,4 @@ HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:5000/health || exit 1
 
 # Run the application (default to Flask API)
-CMD ["python", "app.py"]
+CMD ["python", "app.py"] 

@@ -1,10 +1,30 @@
-streamlit==1.28.1
-sentence-transformers==2.5.1
-faiss-cpu==1.7.4
-groq==0.4.3
-requests==2.31.0
-PyPDF2==3.0.1
-numpy==1.24.3
+# Core web framework
+streamlit>=1.28.1
+
+# Vector embeddings and search
+sentence-transformers>=2.5.1
+faiss-cpu>=1.7.4
+
+# LLM integration
+groq>=0.4.3
+
+# HTTP requests
+requests>=2.31.0
+
+# PDF processing
+PyPDF2>=3.0.1
+
+# Numerical computing
+numpy>=1.24.3
+
+# Additional dependencies for better compatibility
+pandas>=2.0.0
+pathlib2>=2.3.7
+
+# Flask and API dependencies
+flask>=2.3.0
+flask-cors>=4.0.0
+werkzeug>=2.3.0
 
 
 

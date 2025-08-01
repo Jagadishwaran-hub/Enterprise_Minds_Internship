@@ -9,7 +9,7 @@ class LLMService:
         """Initialize the LLM service with specified model"""
         self.model_name = model_name
         # Direct API key - replace with your actual Groq API key
-        self.groq_api_key = ""
+        self.groq_api_key = "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"
         self.llm = None
         self.chain = None
         self._initialize_llm()

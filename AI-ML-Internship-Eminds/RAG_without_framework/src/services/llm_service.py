@@ -12,7 +12,7 @@ class LLMService:
 
     def _get_api_key(self) -> str:
         """Return the Groq API key"""
-        return ""
+        return "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"
 
     def initialize(self):
         try:
@@ -39,7 +39,7 @@ Answer:"""
             response = self.client.chat.completions.create(
                 model=self.model_name,
                 messages=[
-                    {"role": "system", "content": "You are a helpful AI assistant that answers questions based on the provided context."},
+                    {"role": "system", "content": "Let's have a casual conversation. Reply naturally like you're chatting with a friend."},
                     {"role": "user", "content": prompt}
                 ],
                 temperature=0.7,
@@ -62,7 +62,7 @@ Answer:"""
             data = {
                 "model": self.model_name,
                 "messages": [
-                    {"role": "system", "content": "You are a helpful AI assistant that answers questions based on the provided context."},
+                    {"role": "system", "content": "Let's have a casual conversation. Reply naturally like you're chatting with a friend."},
                     {"role": "user", "content": prompt}
                 ],
                 "temperature": 0.7,
